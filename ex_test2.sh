@@ -11,6 +11,7 @@ do
 
 	elif [ -x "$i" ]
 	then ((exec_count++)) 
+		echo "$i" >> list_exe.txt
 	elif [ -f "$i" ]
 	then ((f_non_count++)) 
 	
